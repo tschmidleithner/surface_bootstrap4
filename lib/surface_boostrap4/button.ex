@@ -43,7 +43,7 @@ defmodule SurfaceBootstrap4.Button do
         "btn-#{@color}": @color,
         "btn-#{@size}": @size,
         "btn-block": @block,
-        "active": @active
+        active: @active
       }}
     >
       <slot>{{ @label }}</slot>
