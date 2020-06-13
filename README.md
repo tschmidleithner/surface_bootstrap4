@@ -1,5 +1,7 @@
 # SurfaceBootstrap4 (WIP)
 
+![Elixir CI](https://github.com/tschmidleithner/surface_bootstrap4/workflows/Elixir%20CI/badge.svg)
+
 A set of [Surface](https://github.com/msaraiva/surface/) components
 based on [Bootstrap 4](https://getbootstrap.com/) for 
 [Phoenix LiveView](https://github.com/phoenixframework/phoenix_live_view).
