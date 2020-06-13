@@ -14,13 +14,12 @@ which is implemented and maintained by the [author](https://github.com/msaraiva)
 
 ## Components
   
-Currently, only the button component is supported. More components will be added 
-soon. Contributions are welcome!
+Currently, only containers, rows, columns and button are supported. 
+More components will be added soon. Contributions are welcome!
   
 ### Layout
 
-  * [ ] Container
-  * [ ] Container fluid
+  * [x] Container (including support fluid and rows and columns as children)
   
 ### Components
 
