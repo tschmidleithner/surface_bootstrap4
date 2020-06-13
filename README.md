@@ -53,6 +53,8 @@ soon. Contributions are welcome!
 <Button color="primary" size="lg">A large button</Button>
 ```
 
+More examples can be found in the [demo application](https://github.com/tschmidleithner/surface_bootstrap4_demo).
+
 ## Usage
 
 Add `surface_bootstrap4` to the list of dependencies in `mix.exs`:
