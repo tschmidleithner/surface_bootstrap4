@@ -51,7 +51,16 @@ More components will be added soon. Contributions are welcome!
 ## Example
 
 ```jsx
-<Button color="primary" size="lg">A large button</Button>
+<Container fluid>
+  <Row>
+    <Col>
+      <Button color="primary" size="lg">A large button</Button>
+    </Col>
+    <Col>
+      <Button color="secondary" block>A block button</Button>
+    </Col>
+  </Row>
+</Container>
 ```
 
 More examples can be found in the [demo application](https://github.com/tschmidleithner/surface_bootstrap4_demo).
