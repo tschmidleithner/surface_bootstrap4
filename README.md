@@ -45,6 +45,7 @@ More components will be added soon. Contributions are welcome!
   * [ ] Progress
   * [ ] Scrollspy
   * [ ] Spinners
+  * [x] Tables (striped, bordered, borderless, hoverable, dark)
   * [ ] Toasts
   * [ ] Tooltips
 
