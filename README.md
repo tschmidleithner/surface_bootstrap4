@@ -14,12 +14,12 @@ which is implemented and maintained by the [author](https://github.com/msaraiva)
 
 ## Components
   
-Currently, only containers, rows, columns and button are supported. 
+Currently, only containers, rows, columns, buttons and navs are supported. 
 More components will be added soon. Contributions are welcome!
   
 ### Layout
 
-  * [x] Container (including support fluid and rows and columns as children)
+  * [x] Container (with fluid support + Row, Col)
   
 ### Components
 
@@ -38,7 +38,7 @@ More components will be added soon. Contributions are welcome!
   * [ ] List group
   * [ ] Media object
   * [ ] Modal
-  * [x] Navs (with NavItem and NavLink component)
+  * [x] Navs (Nav, NavItem, NavLink)
   * [ ] Navbar
   * [ ] Pagination
   * [ ] Popovers
@@ -58,6 +58,18 @@ More components will be added soon. Contributions are welcome!
     </Col>
     <Col>
       <Button color="secondary" block>A block button</Button>
+    </Col>
+  </Row>
+
+  <Row no_gutters>
+    <Col md="10" lg="6" xl="4">
+      <Nav pills>
+        <NavItem>
+          <NavLink to="/" active>Active</NavLink>
+          <NavLink to="/sample">Sample</NavLink>
+          <NavLink to="/" disabled>Disabled</NavLink>
+        </NavItem>
+      </Nav>
     </Col>
   </Row>
 </Container>
