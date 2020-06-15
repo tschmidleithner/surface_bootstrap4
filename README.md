@@ -26,7 +26,7 @@ More components will be added soon. Contributions are welcome!
   * [ ] Alerts
   * [ ] Badge
   * [ ] Breadcrumb
-  * [x] Buttons: with colors, sizes and states.
+  * [x] Buttons (with colors, sizes and states)
   * [ ] Button group
   * [ ] Card
   * [ ] Carousel
@@ -38,7 +38,7 @@ More components will be added soon. Contributions are welcome!
   * [ ] List group
   * [ ] Media object
   * [ ] Modal
-  * [ ] Navs
+  * [x] Navs (with NavItem and NavLink component)
   * [ ] Navbar
   * [ ] Pagination
   * [ ] Popovers
