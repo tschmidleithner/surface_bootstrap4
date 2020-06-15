@@ -6,12 +6,12 @@ defmodule SurfaceBootstrap4.Container.Row do
   use Surface.Component
 
   @doc "The type of the container"
-  property(no_gutters, :boolean, default: false)
+  property no_gutters, :boolean, default: false
 
   @doc """
   The content of the generated row.
   """
-  slot(default, required: true)
+  slot default, required: true
 
   def render(assigns) do
     ~H"""

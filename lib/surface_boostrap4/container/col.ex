@@ -6,27 +6,27 @@ defmodule SurfaceBootstrap4.Container.Col do
   use Surface.Component
 
   @doc "The size of column"
-  property(size, :integer)
+  property size, :integer
 
   @doc "Responsive behaviour for xs of the column"
-  property(xs, :integer)
+  property xs, :integer
 
   @doc "Responsive behaviour for sm of the column"
-  property(sm, :integer)
+  property sm, :integer
 
   @doc "Responsive behaviour for md of the column"
-  property(md, :integer)
+  property md, :integer
 
   @doc "Responsive behaviour for lg of the column"
-  property(lg, :integer)
+  property lg, :integer
 
   @doc "Responsive behaviour for xl of the column"
-  property(xl, :integer)
+  property xl, :integer
 
   @doc """
   The content of the generated column.
   """
-  slot(default, required: true)
+  slot default, required: true
 
   def render(assigns) do
     ~H"""
