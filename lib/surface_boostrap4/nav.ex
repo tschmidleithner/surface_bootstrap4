@@ -28,7 +28,7 @@ defmodule SurfaceBootstrap4.Nav do
     ~H"""
     <ul
       class={{
-        "nav",
+        :nav,
         "flex-column": @vertical,
         "nav-tabs": @tabs,
         "nav-pills": @pills

@@ -32,7 +32,7 @@ defmodule SurfaceBootstrap4.Container.Col do
     ~H"""
     <div
       class={{
-        "col",
+        :col,
         "col-#{@size}": @size,
         "col-xs-#{@xs}": @xs,
         "col-sm-#{@sm}": @sm,

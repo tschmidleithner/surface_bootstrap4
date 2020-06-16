@@ -17,7 +17,7 @@ defmodule SurfaceBootstrap4.Container.Row do
     ~H"""
     <div
       class={{
-        "row",
+        :row,
         "no-gutters": @no_gutters
       }}
     >
