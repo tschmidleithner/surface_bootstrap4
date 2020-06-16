@@ -14,7 +14,6 @@ which is implemented and maintained by the [author](https://github.com/msaraiva)
 
 ## Components
   
-Currently, only containers, rows, columns, buttons and navs are supported. 
 More components will be added soon. Contributions are welcome!
   
 ### Layout
@@ -24,7 +23,7 @@ More components will be added soon. Contributions are welcome!
 ### Components
 
   * [ ] Alerts
-  * [ ] Badge
+  * [x] Badge
   * [ ] Breadcrumb
   * [x] Buttons (with colors, sizes and states)
   * [ ] Button group
@@ -53,6 +52,14 @@ More components will be added soon. Contributions are welcome!
 
 ```jsx
 <Container fluid>
+  <Row>
+    <Col>
+      <Badge color="light">Light badge</Badge>
+      <Badge color="dark" pill>Dark pill badge</Badge>
+    </Col>
+  </Row>
+
+
   <Row>
     <Col>
       <Button color="primary" size="lg">A large button</Button>
