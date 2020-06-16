@@ -66,6 +66,7 @@ More components will be added soon. Contributions are welcome!
     </Col>
     <Col>
       <Button color="secondary" block>A block button</Button>
+      <Button color="info" class={{"p-5", "m-3"}}>Button with custom/additional CSS classes</Button>
     </Col>
   </Row>
 
