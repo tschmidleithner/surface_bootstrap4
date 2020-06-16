@@ -7,7 +7,7 @@ defmodule SurfaceBootstrap4.ButtonTest do
 
   test "creates a <button> with type" do
     expected = """
-    <button type="button" class="btn">
+    <button type="button" class="btn ">
     Do something
     </button>
     """
@@ -15,12 +15,22 @@ defmodule SurfaceBootstrap4.ButtonTest do
     assert_component(~S(<Button>Do something</Button>), expected)
   end
 
+  test "creates a primary <button> with additional CSS classes" do
+    expected = """
+    <button type="button" class="btn p-3 m-5 btn-primary">
+    With padding and margin
+    </button>
+    """
+
+    assert_component(~S(<Button class={{ "p-3", "m-5" }} color="primary">With padding and margin</Button>), expected)
+  end
+
   test_with_params "property size", &assert_component/2 do
     [
       small: {
         ~S(<Button size="sm">small</Button>),
         """
-        <button type="button" class="btn btn-sm">
+        <button type="button" class="btn  btn-sm">
         small
         </button>
         """
@@ -28,7 +38,7 @@ defmodule SurfaceBootstrap4.ButtonTest do
       medium: {
         ~S(<Button size="md">medium</Button>),
         """
-        <button type="button" class="btn btn-md">
+        <button type="button" class="btn  btn-md">
         medium
         </button>
         """
@@ -36,7 +46,7 @@ defmodule SurfaceBootstrap4.ButtonTest do
       large: {
         ~S(<Button size="lg">large</Button>),
         """
-        <button type="button" class="btn btn-lg">
+        <button type="button" class="btn  btn-lg">
         large
         </button>
         """
@@ -49,7 +59,7 @@ defmodule SurfaceBootstrap4.ButtonTest do
       primary: {
         ~S(<Button color="primary">primary</Button>),
         """
-        <button type="button" class="btn btn-primary">
+        <button type="button" class="btn  btn-primary">
         primary
         </button>
         """
@@ -57,7 +67,7 @@ defmodule SurfaceBootstrap4.ButtonTest do
       secondary: {
         ~S(<Button color="secondary">secondary</Button>),
         """
-        <button type="button" class="btn btn-secondary">
+        <button type="button" class="btn  btn-secondary">
         secondary
         </button>
         """
@@ -65,7 +75,7 @@ defmodule SurfaceBootstrap4.ButtonTest do
       success: {
         ~S(<Button color="success">success</Button>),
         """
-        <button type="button" class="btn btn-success">
+        <button type="button" class="btn  btn-success">
         success
         </button>
         """
@@ -73,7 +83,7 @@ defmodule SurfaceBootstrap4.ButtonTest do
       info: {
         ~S(<Button color="info">info</Button>),
         """
-        <button type="button" class="btn btn-info">
+        <button type="button" class="btn  btn-info">
         info
         </button>
         """
@@ -81,7 +91,7 @@ defmodule SurfaceBootstrap4.ButtonTest do
       warning: {
         ~S(<Button color="warning">warning</Button>),
         """
-        <button type="button" class="btn btn-warning">
+        <button type="button" class="btn  btn-warning">
         warning
         </button>
         """
@@ -89,7 +99,7 @@ defmodule SurfaceBootstrap4.ButtonTest do
       danger: {
         ~S(<Button color="danger">danger</Button>),
         """
-        <button type="button" class="btn btn-danger">
+        <button type="button" class="btn  btn-danger">
         danger
         </button>
         """
@@ -97,7 +107,7 @@ defmodule SurfaceBootstrap4.ButtonTest do
       link: {
         ~S(<Button color="link">link</Button>),
         """
-        <button type="button" class="btn btn-link">
+        <button type="button" class="btn  btn-link">
         link
         </button>
         """
@@ -110,7 +120,7 @@ defmodule SurfaceBootstrap4.ButtonTest do
       block_primary: {
         ~S(<Button color="primary" block>block primary</Button>),
         """
-        <button type="button" class="btn btn-primary btn-block">
+        <button type="button" class="btn  btn-primary btn-block">
         block primary
         </button>
         """
@@ -118,7 +128,7 @@ defmodule SurfaceBootstrap4.ButtonTest do
       block_secondary: {
         ~S(<Button color="secondary" block>block secondary</Button>),
         """
-        <button type="button" class="btn btn-secondary btn-block">
+        <button type="button" class="btn  btn-secondary btn-block">
         block secondary
         </button>
         """
@@ -131,7 +141,7 @@ defmodule SurfaceBootstrap4.ButtonTest do
       active: {
         ~S(<Button active>active</Button>),
         """
-        <button type="button" class="btn active">
+        <button type="button" class="btn  active">
         active
         </button>
         """
@@ -139,7 +149,7 @@ defmodule SurfaceBootstrap4.ButtonTest do
       primary_active: {
         ~S(<Button color="primary" active>primary active</Button>),
         """
-        <button type="button" class="btn btn-primary active">
+        <button type="button" class="btn  btn-primary active">
         primary active
         </button>
         """
@@ -152,7 +162,7 @@ defmodule SurfaceBootstrap4.ButtonTest do
       disabled: {
         ~S(<Button disabled>disabled</Button>),
         """
-        <button type="button" disabled="disabled" class="btn">
+        <button type="button" disabled="disabled" class="btn ">
         disabled
         </button>
         """
@@ -160,7 +170,7 @@ defmodule SurfaceBootstrap4.ButtonTest do
       disabled_primary: {
         ~S(<Button color="primary" disabled>disabled primary</Button>),
         """
-        <button type="button" disabled="disabled" class="btn btn-primary">
+        <button type="button" disabled="disabled" class="btn  btn-primary">
         disabled primary
         </button>
         """

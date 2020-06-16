@@ -5,6 +5,9 @@ defmodule SurfaceBootstrap4.Nav.NavLink do
 
   use Surface.Component
 
+  @doc "Additional CSS classes"
+  property class, :css_class
+
   @doc "Active style"
   property active, :boolean
 
@@ -30,6 +33,7 @@ defmodule SurfaceBootstrap4.Nav.NavLink do
       click={{@click}}
       class={{
         "nav-link",
+        @class,
         active: @active,
         disabled: @disabled,
       }}

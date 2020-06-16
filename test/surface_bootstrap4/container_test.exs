@@ -12,7 +12,7 @@ defmodule SurfaceBootstrap4.ContainerTest do
       container: {
         ~S(<Container>container</Container>),
         """
-        <div class="container">
+        <div class=" container">
         container
         </div>
         """
@@ -20,7 +20,7 @@ defmodule SurfaceBootstrap4.ContainerTest do
       container_fluid: {
         ~S(<Container fluid>fluid container</Container>),
         """
-        <div class="container-fluid">
+        <div class=" container-fluid">
         fluid container
         </div>
         """
@@ -39,11 +39,11 @@ defmodule SurfaceBootstrap4.ContainerTest do
         </Container>
         """,
         """
-        <div class="container"><div class="row">
+        <div class=" container"><div class="row ">
         First row
-        </div><div class="row no-gutters">
+        </div><div class="row  no-gutters">
         Second row
-        </div><div class="row">
+        </div><div class="row ">
         Third row
         </div></div>
         """
@@ -67,11 +67,11 @@ defmodule SurfaceBootstrap4.ContainerTest do
         </Container>
         """,
         """
-        <div class="container"><div class="row"><div class="col col-6">
+        <div class=" container"><div class="row "><div class="col  col-6">
             First row, first col
-        </div><div class="col col-12 col-xs-10 col-sm-8 col-md-6 col-lg-4 col-xl-2">
+        </div><div class="col  col-12 col-xs-10 col-sm-8 col-md-6 col-lg-4 col-xl-2">
             First row, second col
-        </div></div><div class="row no-gutters"><div class="col">
+        </div></div><div class="row  no-gutters"><div class="col ">
             Second row
         </div></div></div>
         """

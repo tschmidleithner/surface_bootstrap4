@@ -8,6 +8,9 @@ defmodule SurfaceBootstrap4.Badge do
   @doc "The label of the badge"
   property label, :string
 
+  @doc "Additional CSS classes"
+  property class, :css_class
+
   @doc "The color of the badge"
   property color, :string, values: ~w(primary secondary success info warning danger link light dark)
 
@@ -29,6 +32,7 @@ defmodule SurfaceBootstrap4.Badge do
       :on-phx-click={{@click}}
       class={{
         :badge,
+        @class,
         "badge-pill": @pill,
         "badge-#{@color}": @color
       }}

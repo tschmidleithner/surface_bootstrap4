@@ -8,6 +8,9 @@ defmodule SurfaceBootstrap4.Container.Row do
   @doc "The type of the container"
   property no_gutters, :boolean, default: false
 
+  @doc "Additional CSS classes"
+  property class, :css_class
+
   @doc """
   The content of the generated row.
   """
@@ -18,6 +21,7 @@ defmodule SurfaceBootstrap4.Container.Row do
     <div
       class={{
         :row,
+        @class,
         "no-gutters": @no_gutters
       }}
     >

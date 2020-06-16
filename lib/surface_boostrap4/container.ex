@@ -8,6 +8,9 @@ defmodule SurfaceBootstrap4.Container do
   @doc "The type of the container"
   property fluid, :boolean, default: false
 
+  @doc "Additional CSS classes"
+  property class, :css_class
+
   @doc """
   The content of the generated container.
   """
@@ -17,6 +20,7 @@ defmodule SurfaceBootstrap4.Container do
     ~H"""
     <div
       class={{
+        @class,
         container: !@fluid,
         "container-fluid": @fluid
       }}

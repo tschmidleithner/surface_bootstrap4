@@ -11,6 +11,9 @@ defmodule SurfaceBootstrap4.Table do
   @doc "The data that populates the table"
   property data, :list, required: true
 
+  @doc "Additional CSS classes"
+  property class, :css_class
+
   @doc "The size of the table"
   property size, :string, values: ~w(sm md lg)
 
@@ -43,6 +46,7 @@ defmodule SurfaceBootstrap4.Table do
     ~H"""
     <table class={{
       :table,
+      @class,
       "table-#{@size}": @size,
       "table-bordered": @bordered,
       "table-borderless": @borderless,

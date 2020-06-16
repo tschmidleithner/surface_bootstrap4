@@ -8,6 +8,9 @@ defmodule SurfaceBootstrap4.Button do
   @doc "The label of the button"
   property label, :string
 
+  @doc "Additional CSS classes"
+  property class, :css_class
+
   @doc "The color of the button"
   property color, :string, values: ~w(primary secondary success info warning danger link)
 
@@ -40,6 +43,7 @@ defmodule SurfaceBootstrap4.Button do
       disabled={{@disabled}}
       class={{
         :btn,
+        @class,
         "btn-#{@color}": @color,
         "btn-#{@size}": @size,
         "btn-block": @block,

@@ -23,6 +23,9 @@ defmodule SurfaceBootstrap4.Container.Col do
   @doc "Responsive behaviour for xl of the column"
   property xl, :integer
 
+  @doc "Additional CSS classes"
+  property class, :css_class
+
   @doc """
   The content of the generated column.
   """
@@ -33,6 +36,7 @@ defmodule SurfaceBootstrap4.Container.Col do
     <div
       class={{
         :col,
+        @class,
         "col-#{@size}": @size,
         "col-xs-#{@xs}": @xs,
         "col-sm-#{@sm}": @sm,

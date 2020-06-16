@@ -18,7 +18,7 @@ defmodule SurfaceBootstrap4.NavTest do
         </Nav>
         """,
         """
-        <ul class="nav"><li class="nav-item"><a class="nav-link" href="/navigate">
+        <ul class="nav "><li class="nav-item "><a class="nav-link " href="/navigate">
         Navigation default
         </a></li></ul>
         """
@@ -26,7 +26,7 @@ defmodule SurfaceBootstrap4.NavTest do
       nav_vertical: {
         ~S(<Nav vertical>Navigation vertical</Nav>),
         """
-        <ul class="nav flex-column">
+        <ul class="nav  flex-column">
         Navigation vertical
         </ul>
         """
@@ -34,7 +34,7 @@ defmodule SurfaceBootstrap4.NavTest do
       nav_tabs: {
         ~S(<Nav tabs>Navigation tabs</Nav>),
         """
-        <ul class="nav nav-tabs">
+        <ul class="nav  nav-tabs">
         Navigation tabs
         </ul>
         """
@@ -42,7 +42,7 @@ defmodule SurfaceBootstrap4.NavTest do
       nav_pills: {
         ~S(<Nav pills>Navigation pills</Nav>),
         """
-        <ul class="nav nav-pills">
+        <ul class="nav  nav-pills">
         Navigation pills
         </ul>
         """
@@ -55,7 +55,7 @@ defmodule SurfaceBootstrap4.NavTest do
       active: {
         ~S(<NavLink to="/" active>Active link</NavLink>),
         """
-        <a class="nav-link active" href="/">
+        <a class="nav-link  active" href="/">
         Active link
         </a>
         """
@@ -63,7 +63,7 @@ defmodule SurfaceBootstrap4.NavTest do
       disabled: {
         ~S(<NavLink to="/" disabled>Disabled link</NavLink>),
         """
-        <a class="nav-link disabled" href="/">
+        <a class="nav-link  disabled" href="/">
         Disabled link
         </a>
         """

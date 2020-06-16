@@ -24,11 +24,15 @@ defmodule SurfaceBootstrap4.Nav do
   @doc "Navigation with pills"
   property pills, :boolean
 
+  @doc "Additional CSS classes"
+  property class, :css_class
+
   def render(assigns) do
     ~H"""
     <ul
       class={{
         :nav,
+        @class,
         "flex-column": @vertical,
         "nav-tabs": @tabs,
         "nav-pills": @pills
