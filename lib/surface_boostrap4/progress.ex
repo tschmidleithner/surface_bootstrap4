@@ -4,7 +4,7 @@ defmodule SurfaceBootstrap4.Progress do
 
   ## Examples
   ```
-  <SurfaceBootstrap4.Progress value="50" color="primary">50%</SurfaceBootstrap4.Progress>
+  <SurfaceBootstrap4.Progress value=50 color="primary">50%</SurfaceBootstrap4.Progress>
   ```
   """
 
@@ -14,7 +14,7 @@ defmodule SurfaceBootstrap4.Progress do
   property label, :string
 
   @doc "The value of the progress"
-  property value, :integer
+  property value, :integer, default: 0
 
   @doc "Maximum value of the progress"
   property max_value, :integer, default: 100
@@ -34,11 +34,19 @@ defmodule SurfaceBootstrap4.Progress do
   @doc "Animated style"
   property animated, :boolean
 
+  @doc "The percent value of the progress bar depending on value and max_value"
+  context set percent, :decimal
+
   @doc """
   The content of the generated progress element. If no content is provided,
   the value of property `label` is used instead.
   """
   slot(default)
+
+  def init_context(assigns) do
+    percent = (assigns.value / assigns.max_value) * 100
+    {:ok, percent: percent}
+  end
 
   def render(assigns) do
     ~H"""
@@ -54,7 +62,7 @@ defmodule SurfaceBootstrap4.Progress do
           "progress-bar-striped": @striped,
           "progress-bar-animated": @animated,
         }}
-        style="width: {{ @value }}%"
+        style="width: {{ @percent }}%"
         role="progress-bar"
         aria-valuenow="{{ @value }}"
         aria-valuemin="0"
