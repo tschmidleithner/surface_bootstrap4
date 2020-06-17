@@ -25,7 +25,7 @@ More components will be added soon. Contributions are welcome!
   * [ ] Alerts
   * [x] Badge
   * [ ] Breadcrumb
-  * [x] Buttons (with colors, sizes and states)
+  * [x] Buttons (colors, sizes and states)
   * [ ] Button group
   * [ ] Card
   * [ ] Carousel
@@ -41,7 +41,7 @@ More components will be added soon. Contributions are welcome!
   * [ ] Navbar
   * [ ] Pagination
   * [ ] Popovers
-  * [ ] Progress
+  * [x] Progress (colors, animated and striped)
   * [ ] Scrollspy
   * [ ] Spinners
   * [x] Tables (striped, bordered, borderless, hoverable, dark)
@@ -59,7 +59,6 @@ More components will be added soon. Contributions are welcome!
     </Col>
   </Row>
 
-
   <Row>
     <Col>
       <Button color="primary" size="lg">A large button</Button>
@@ -69,6 +68,8 @@ More components will be added soon. Contributions are welcome!
       <Button color="info" class={{"p-5", "m-3"}}>Button with custom/additional CSS classes</Button>
     </Col>
   </Row>
+
+  <Row><Col><Progress value="50" animated striped>50%</Progress></Col></Row>
 
   <Row no_gutters>
     <Col md="10" lg="6" xl="4">
