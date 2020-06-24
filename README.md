@@ -69,7 +69,15 @@ More components will be added soon. Contributions are welcome!
     </Col>
   </Row>
 
-  <Row><Col><Progress value=50 animated striped>50%</Progress></Col></Row>
+  <Row>
+    <Col><Alert color="primary">A primary alert</Alert></Col>
+  </Row>
+
+  <Row>
+    <Col>
+      <Progress value=50 animated striped>50%</Progress>
+    </Col>
+  </Row>
 
   <Row no_gutters>
     <Col md="10" lg="6" xl="4">
