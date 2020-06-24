@@ -13,11 +13,8 @@ defmodule SurfaceBootstrap4.Alert do
   @doc "Additional CSS classes"
   property class, :css_class
 
-  @doc "The color of the badge"
+  @doc "The color of the alert"
   property color, :string, values: ~w(primary secondary success info warning danger light dark)
-
-  @doc "Badges more rounded with larger border-radius"
-  property pill, :boolean
 
   @doc "Triggered on click"
   property toggle, :event
