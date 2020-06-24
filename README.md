@@ -22,7 +22,7 @@ More components will be added soon. Contributions are welcome!
   
 ### Components
 
-  * [ ] Alerts
+  * [x] Alerts (colors, closeable)
   * [x] Badge
   * [ ] Breadcrumb
   * [x] Buttons (colors, sizes and states)
