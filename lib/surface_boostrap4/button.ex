@@ -1,6 +1,13 @@
 defmodule SurfaceBootstrap4.Button do
   @moduledoc """
   Bootstrap4 button component.
+
+  ## Examples
+  ```
+  <SurfaceBootstrap4.Button color="primary">
+    Primary Button
+  </SurfaceBootstrap4.Button>
+  ```
   """
 
   use Surface.Component

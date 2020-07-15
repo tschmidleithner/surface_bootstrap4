@@ -1,6 +1,17 @@
 defmodule SurfaceBootstrap4.Container do
   @moduledoc """
   Bootstrap4 container.
+
+  ## Examples
+  ```
+  <SurfaceBootstrap4.Container>
+    <SurfaceBootstrap4.Container.Row>
+      <SurfaceBootstrap4.Container.Col>
+        Container -> Row -> Column
+      </SurfaceBootstrap4.Container.Col>
+    </SurfaceBootstrap4.Container.Row>
+  </SurfaceBootstrap4.Container>
+  ```
   """
 
   use Surface.Component
