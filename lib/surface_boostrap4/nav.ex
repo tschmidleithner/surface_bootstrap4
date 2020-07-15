@@ -6,9 +6,9 @@ defmodule SurfaceBootstrap4.Nav do
   ## Examples
   ```
   <SurfaceBootstrap4.Nav>
-    <SurfaceBootstrap4.NavItem>
-      <SurfaceBootstrap4.NavLink to="/navigate">Navigation item</SurfaceBootstrap4.NavLink>
-    </SurfaceBootstrap4.NavItem>
+    <SurfaceBootstrap4.Nav.NavItem>
+      <SurfaceBootstrap4.Nav.NavLink to="/navigate">Navigation item</SurfaceBootstrap4.Nav.NavLink>
+    </SurfaceBootstrap4.Nav.NavItem>
   </SurfaceBootstrap4.Nav>
   ```
   """
