@@ -6,25 +6,25 @@ defmodule SurfaceBootstrap4.Nav.NavLink do
   use Surface.Component
 
   @doc "Additional CSS classes"
-  property class, :css_class
+  prop class, :css_class
 
   @doc "Active style"
-  property active, :boolean
+  prop active, :boolean
 
   @doc "Set the navigation link as disabled"
-  property disabled, :boolean
+  prop disabled, :boolean
 
   @doc "Place to link to"
-  property to, :string, required: true
+  prop to, :string, required: true
 
   @doc "Triggered on click"
-  property click, :event
+  prop click, :event
 
   @doc """
   The label for the generated navigation link, if no content (default slot) is
   provided.
   """
-  property label, :string
+  prop label, :string
 
   def render(assigns) do
     ~H"""

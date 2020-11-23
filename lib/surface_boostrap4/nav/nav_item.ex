@@ -11,7 +11,7 @@ defmodule SurfaceBootstrap4.Nav.NavItem do
   slot default, required: true
 
   @doc "Additional CSS classes"
-  property class, :css_class
+  prop class, :css_class
 
   def render(assigns) do
     ~H"""

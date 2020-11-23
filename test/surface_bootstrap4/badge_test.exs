@@ -7,8 +7,8 @@ defmodule SurfaceBootstrap4.BadgeTest do
 
   test "creates a <span> with class badge" do
     expected = """
-    <span class="badge ">
-    A badge
+    <span class="badge">
+      A badge
     </span>
     """
 
@@ -18,7 +18,7 @@ defmodule SurfaceBootstrap4.BadgeTest do
   test "creates a <span> with class badge, badge-primary and additional CSS classes" do
     expected = """
     <span class="badge p-3 m-5 badge-primary">
-    With padding and margin
+      With padding and margin
     </span>
     """
 
@@ -71,16 +71,16 @@ defmodule SurfaceBootstrap4.BadgeTest do
       pill: {
         ~S(<Badge pill>pill</Badge>),
         """
-        <span class="badge  badge-pill">
-        pill
+        <span class="badge badge-pill">
+          pill
         </span>
         """
       },
       primary_pill: {
         ~S(<Badge color="primary" pill>primary pill</Badge>),
         """
-        <span class="badge  badge-pill badge-primary">
-        primary pill
+        <span class="badge badge-pill badge-primary">
+          primary pill
         </span>
         """
       },
@@ -89,8 +89,8 @@ defmodule SurfaceBootstrap4.BadgeTest do
 
   defp render_and_assert_badge(component, expected_color) do
     expected = """
-    <span class="badge  badge-#{expected_color}">
-    #{expected_color}
+    <span class="badge badge-#{expected_color}">
+      #{expected_color}
     </span>
     """
 

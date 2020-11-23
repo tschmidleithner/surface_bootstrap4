@@ -6,19 +6,19 @@ defmodule SurfaceBootstrap4.Badge do
   use Surface.Component
 
   @doc "The label of the badge"
-  property label, :string
+  prop label, :string
 
   @doc "Additional CSS classes"
-  property class, :css_class
+  prop class, :css_class
 
   @doc "The color of the badge"
-  property color, :string, values: ~w(primary secondary success info warning danger link light dark)
+  prop color, :string, values: ~w(primary secondary success info warning danger link light dark)
 
   @doc "Badges more rounded with larger border-radius"
-  property pill, :boolean
+  prop pill, :boolean
 
   @doc "Triggered on click"
-  property click, :event
+  prop click, :event
 
   @doc """
   The content of the generated `<span>` element. If no content is provided,

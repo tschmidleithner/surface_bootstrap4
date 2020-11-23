@@ -11,13 +11,13 @@ defmodule SurfaceBootstrap4.Alert do
   use Surface.Component
 
   @doc "Additional CSS classes"
-  property class, :css_class
+  prop class, :css_class
 
   @doc "The color of the alert"
-  property color, :string, values: ~w(primary secondary success info warning danger light dark)
+  prop color, :string, values: ~w(primary secondary success info warning danger light dark)
 
   @doc "Triggered on click"
-  property toggle, :event
+  prop toggle, :event
 
   @doc """
   The content of the generated `<div>` element.

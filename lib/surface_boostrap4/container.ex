@@ -17,10 +17,10 @@ defmodule SurfaceBootstrap4.Container do
   use Surface.Component
 
   @doc "The type of the container"
-  property fluid, :boolean, default: false
+  prop fluid, :boolean, default: false
 
   @doc "Additional CSS classes"
-  property class, :css_class
+  prop class, :css_class
 
   @doc """
   The content of the generated container.

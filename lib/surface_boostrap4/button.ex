@@ -13,28 +13,28 @@ defmodule SurfaceBootstrap4.Button do
   use Surface.Component
 
   @doc "The label of the button"
-  property label, :string
+  prop label, :string
 
   @doc "Additional CSS classes"
-  property class, :css_class
+  prop class, :css_class
 
   @doc "The color of the button"
-  property color, :string, values: ~w(primary secondary success info warning danger link)
+  prop color, :string, values: ~w(primary secondary success info warning danger link)
 
   @doc "The size of button"
-  property size, :string, values: ~w(sm md lg)
+  prop size, :string, values: ~w(sm md lg)
 
   @doc "Set the button as disabled preventing the user from interacting with the control"
-  property disabled, :boolean
+  prop disabled, :boolean
 
   @doc "Block level style"
-  property block, :boolean
+  prop block, :boolean
 
   @doc "Active style"
-  property active, :boolean
+  prop active, :boolean
 
   @doc "Triggered on click"
-  property click, :event
+  prop click, :event
 
   @doc """
   The content of the generated `<button>` element. If no content is provided,

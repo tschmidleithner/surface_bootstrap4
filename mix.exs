@@ -22,7 +22,7 @@ defmodule SurfaceBootstrap4.MixProject do
     [
       {:jason, "~> 1.0"},
       {:floki, "~> 0.25.0", only: :test},
-      {:surface, "~> 0.1.0-alpha.2"},
+      {:surface, "~> 0.1.0"},
       {:ex_parameterized, "~> 1.3.7", only: :test}
     ]
   end

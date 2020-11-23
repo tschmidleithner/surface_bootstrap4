@@ -16,16 +16,16 @@ defmodule SurfaceBootstrap4.Nav do
   use Surface.Component
 
   @doc "Vertical stack navigation"
-  property vertical, :boolean
+  prop vertical, :boolean
 
   @doc "Tabbed navigation"
-  property tabs, :boolean
+  prop tabs, :boolean
 
   @doc "Navigation with pills"
-  property pills, :boolean
+  prop pills, :boolean
 
   @doc "Additional CSS classes"
-  property class, :css_class
+  prop class, :css_class
 
   def render(assigns) do
     ~H"""

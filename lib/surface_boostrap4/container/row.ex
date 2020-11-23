@@ -6,10 +6,10 @@ defmodule SurfaceBootstrap4.Container.Row do
   use Surface.Component
 
   @doc "The type of the container"
-  property no_gutters, :boolean, default: false
+  prop no_gutters, :boolean, default: false
 
   @doc "Additional CSS classes"
-  property class, :css_class
+  prop class, :css_class
 
   @doc """
   The content of the generated row.

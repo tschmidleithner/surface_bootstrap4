@@ -9,35 +9,35 @@ defmodule SurfaceBootstrap4.Table do
   use Surface.Component
 
   @doc "The data that populates the table"
-  property data, :list, required: true
+  prop data, :list, required: true
 
   @doc "Additional CSS classes"
-  property class, :css_class
+  prop class, :css_class
 
   @doc "The size of the table"
-  property size, :string, values: ~w(sm md lg)
+  prop size, :string, values: ~w(sm md lg)
 
   @doc "Add borders to all the cells"
-  property bordered, :boolean, default: false
+  prop bordered, :boolean, default: false
 
   @doc "Add borderless to all the cells"
-  property borderless, :boolean, default: false
+  prop borderless, :boolean, default: false
 
   @doc "Add stripes to the table"
-  property striped, :boolean, default: false
+  prop striped, :boolean, default: false
 
   @doc "Add hovers to the table"
-  property hover, :boolean, default: false
+  prop hover, :boolean, default: false
 
   @doc "Invert colors of the table to dark background and light text"
-  property dark, :boolean, default: false
+  prop dark, :boolean, default: false
 
   @doc """
   A function that returns a class for the item's underlying `<tr>`
   element. The function receives the item and index related to
   the row.
   """
-  property rowClass, :fun
+  prop rowClass, :fun
 
   @doc "The columns of the table"
   slot cols, props: [item: ^data], required: true
@@ -65,8 +65,8 @@ defmodule SurfaceBootstrap4.Table do
         <tr
           :for={{ {item, index} <- Enum.with_index(@data) }}
           class={{ row_class_fun(@rowClass).(item, index) }}>
-          <td :for={{ col <- @cols }}>
-            <span>{{ col.inner_content.(item: item) }}</span>
+          <td :for.index={{ index <- @cols }}>
+            <span><slot name="cols" index={{ index }} :props={{ item: item }}/></span>
           </td>
         </tr>
       </tbody>

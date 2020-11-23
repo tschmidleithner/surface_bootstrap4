@@ -9,8 +9,8 @@ defmodule SurfaceBootstrap4.AlertTest do
     code = ~S(<Alert>alert</Alert>)
 
     expected = """
-    <div class="alert ">
-    alert
+    <div class="alert">
+      alert
     </div>
     """
 
@@ -22,14 +22,14 @@ defmodule SurfaceBootstrap4.AlertTest do
 
     expected = """
     <div class="alert p-3 m-5 alert-primary">
-    With padding and margin
+      With padding and margin
     </div>
     """
 
     assert render_live(code) =~ expected
   end
 
-  test_with_params "property color", &assert_regex/2 do
+  test_with_params "prop color", &assert_regex/2 do
     [
       primary: {
         ~S(<Alert color="primary" />),

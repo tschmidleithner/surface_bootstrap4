@@ -6,25 +6,25 @@ defmodule SurfaceBootstrap4.Container.Col do
   use Surface.Component
 
   @doc "The size of column"
-  property size, :integer
+  prop size, :integer
 
   @doc "Responsive behaviour for xs of the column"
-  property xs, :integer
+  prop xs, :integer
 
   @doc "Responsive behaviour for sm of the column"
-  property sm, :integer
+  prop sm, :integer
 
   @doc "Responsive behaviour for md of the column"
-  property md, :integer
+  prop md, :integer
 
   @doc "Responsive behaviour for lg of the column"
-  property lg, :integer
+  prop lg, :integer
 
   @doc "Responsive behaviour for xl of the column"
-  property xl, :integer
+  prop xl, :integer
 
   @doc "Additional CSS classes"
-  property class, :css_class
+  prop class, :css_class
 
   @doc """
   The content of the generated column.
@@ -42,7 +42,7 @@ defmodule SurfaceBootstrap4.Container.Col do
         "col-sm-#{@sm}": @sm,
         "col-md-#{@md}": @md,
         "col-lg-#{@lg}": @lg,
-        "col-xl-#{@xl}": @xl,
+        "col-xl-#{@xl}": @xl
       }}
     >
       <slot></slot>

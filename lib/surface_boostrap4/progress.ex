@@ -11,31 +11,28 @@ defmodule SurfaceBootstrap4.Progress do
   use Surface.Component
 
   @doc "The label of the button"
-  property label, :string
+  prop label, :string
 
   @doc "The value of the progress"
-  property value, :integer, default: 0
+  prop value, :integer, default: 0
 
   @doc "Maximum value of the progress"
-  property max_value, :integer, default: 100
+  prop max_value, :integer, default: 100
 
   @doc "Additional CSS classes for the outer progress div"
-  property class, :css_class
+  prop class, :css_class
 
   @doc "Additional CSS classes for the inner bar div"
-  property bar_class, :css_class
+  prop bar_class, :css_class
 
   @doc "The color of the button"
-  property color, :string, values: ~w(primary secondary success info warning danger)
+  prop color, :string, values: ~w(primary secondary success info warning danger)
 
   @doc "Stripe style"
-  property striped, :boolean
+  prop striped, :boolean
 
   @doc "Animated style"
-  property animated, :boolean
-
-  @doc "The percent value of the progress bar depending on value and max_value"
-  context set percent, :decimal
+  prop animated, :boolean
 
   @doc """
   The content of the generated progress element. If no content is provided,
@@ -43,12 +40,9 @@ defmodule SurfaceBootstrap4.Progress do
   """
   slot(default)
 
-  def init_context(assigns) do
-    percent = (assigns.value / assigns.max_value) * 100
-    {:ok, percent: percent}
-  end
-
   def render(assigns) do
+    percent = (assigns.value / assigns.max_value) * 100
+
     ~H"""
     <div class={{
       :progress,
@@ -62,7 +56,7 @@ defmodule SurfaceBootstrap4.Progress do
           "progress-bar-striped": @striped,
           "progress-bar-animated": @animated,
         }}
-        style="width: {{ @percent }}%"
+        style="width: {{ percent }}%"
         role="progress-bar"
         aria-valuenow="{{ @value }}"
         aria-valuemin="0"

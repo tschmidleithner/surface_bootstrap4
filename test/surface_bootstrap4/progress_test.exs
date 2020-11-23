@@ -9,8 +9,8 @@ defmodule SurfaceBootstrap4.ProgressTest do
     code = ~S(<Progress value=99>99%</Progress>)
 
     expected = """
-    <div class="progress "><div class="progress-bar " style="width: 99.0%" role="progress-bar" aria-valuenow="99" aria-valuemin="0" aria-valuemax="100">
-    99%
+    <div class="progress"><div class="progress-bar" style="width: 99.0%" role="progress-bar" aria-valuenow="99" aria-valuemin="0" aria-valuemax="100">
+        99%
       </div></div>
     """
 
@@ -21,8 +21,8 @@ defmodule SurfaceBootstrap4.ProgressTest do
     code = ~S(<Progress class={{ "p-3", "m-5" }}>With padding and margin</Progress>)
 
     expected = """
-    <div class="progress p-3 m-5"><div class="progress-bar " style="width: 0.0%" role="progress-bar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
-    With padding and margin
+    <div class="progress p-3 m-5"><div class="progress-bar" style="width: 0.0%" role="progress-bar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+        With padding and margin
       </div></div>
     """
 
@@ -33,8 +33,8 @@ defmodule SurfaceBootstrap4.ProgressTest do
     code = ~S(<Progress value=1 max_value=10>10%</Progress>)
 
     expected = """
-    <div class="progress "><div class="progress-bar " style="width: 10.0%" role="progress-bar" aria-valuenow="1" aria-valuemin="0" aria-valuemax="10">
-    10%
+    <div class="progress"><div class="progress-bar" style="width: 10.0%" role="progress-bar" aria-valuenow="1" aria-valuemin="0" aria-valuemax="10">
+        10%
       </div></div>
     """
 
