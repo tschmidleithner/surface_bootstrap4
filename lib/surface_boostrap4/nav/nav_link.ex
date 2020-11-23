@@ -35,7 +35,7 @@ defmodule SurfaceBootstrap4.Nav.NavLink do
         "nav-link",
         @class,
         active: @active,
-        disabled: @disabled,
+        disabled: @disabled
       }}
     >
       <slot>{{ @label }}</slot>

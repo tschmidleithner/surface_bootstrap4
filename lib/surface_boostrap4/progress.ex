@@ -54,7 +54,7 @@ defmodule SurfaceBootstrap4.Progress do
           @bar_class,
           "bg-#{@color}": @color,
           "progress-bar-striped": @striped,
-          "progress-bar-animated": @animated,
+          "progress-bar-animated": @animated
         }}
         style="width: {{ percent }}%"
         role="progress-bar"
