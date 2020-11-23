@@ -46,7 +46,7 @@ defmodule SurfaceBootstrap4.Button do
     ~H"""
     <button
       type="button"
-      :on-phx-click={{@click}}
+      :on-click={{@click}}
       disabled={{@disabled}}
       class={{
         :btn,

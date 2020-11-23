@@ -29,7 +29,7 @@ defmodule SurfaceBootstrap4.Badge do
   def render(assigns) do
     ~H"""
     <span
-      :on-phx-click={{@click}}
+      :on-click={{@click}}
       class={{
         :badge,
         @class,

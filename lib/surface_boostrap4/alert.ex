@@ -37,7 +37,7 @@ defmodule SurfaceBootstrap4.Alert do
 
       <button
         :if={{@toggle}}
-        :on-phx-click={{@toggle}}
+        :on-click={{@toggle}}
         type="button"
         class="close"
         data-dismiss="alert"
