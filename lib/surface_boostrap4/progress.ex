@@ -41,7 +41,7 @@ defmodule SurfaceBootstrap4.Progress do
   slot(default)
 
   def render(assigns) do
-    percent = (assigns.value / assigns.max_value) * 100
+    percent = assigns.value / assigns.max_value * 100
 
     ~H"""
     <div class={{

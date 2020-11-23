@@ -22,7 +22,10 @@ defmodule SurfaceBootstrap4.ButtonTest do
     </button>
     """
 
-    assert_component(~S(<Button class={{ "p-3", "m-5" }} color="primary">With padding and margin</Button>), expected)
+    assert_component(
+      ~S(<Button class={{ "p-3", "m-5" }} color="primary">With padding and margin</Button>),
+      expected
+    )
   end
 
   test_with_params "prop size", &assert_component/2 do

@@ -46,7 +46,7 @@ defmodule SurfaceBootstrap4.NavTest do
           Navigation pills
         </ul>
         """
-      },
+      }
     ]
   end
 

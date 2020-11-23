@@ -22,7 +22,10 @@ defmodule SurfaceBootstrap4.BadgeTest do
     </span>
     """
 
-    assert_component(~S(<Badge class={{ "p-3", "m-5"}} color="primary">With padding and margin</Badge>), expected)
+    assert_component(
+      ~S(<Badge class={{ "p-3", "m-5"}} color="primary">With padding and margin</Badge>),
+      expected
+    )
   end
 
   test_with_params "property color", &render_and_assert_badge/2 do
@@ -62,7 +65,7 @@ defmodule SurfaceBootstrap4.BadgeTest do
       dark: {
         ~S(<Badge color="dark">dark</Badge>),
         "dark"
-      },
+      }
     ]
   end
 
@@ -83,7 +86,7 @@ defmodule SurfaceBootstrap4.BadgeTest do
           primary pill
         </span>
         """
-      },
+      }
     ]
   end
 
