@@ -21,8 +21,8 @@ defmodule SurfaceBootstrap4.MixProject do
   defp deps do
     [
       {:jason, "~> 1.0"},
-      {:floki, "~> 0.25.0", only: :test},
-      {:surface, "~> 0.1.0"},
+      {:floki, "~> 0.29", only: :test},
+      {:surface, "~> 0.1"},
       {:ex_parameterized, "~> 1.3.7", only: :test}
     ]
   end
