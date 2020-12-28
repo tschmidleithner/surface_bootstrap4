@@ -108,6 +108,53 @@ def deps do
 end
 ```
 
+To use Surface on plain Phoenix views with `~H` support, add the following import to your web file in `lib/my_app_web.ex`:
+
+```elixir
+# lib/my_app_web.ex
+
+...
+
+def view do
+  quote do
+    ...
+    import Surface
+  end
+end
+```
+
+You will also need to call `Surface.init/1` in the mount function:
+
+```elixir
+defmodule PageLive do
+  use Phoenix.LiveView
+
+  @impl Phoenix.LiveView
+  def mount(socket) do
+    socket = Surface.init(socket)
+    # ...
+    {:ok, socket}
+  end
+
+  ...
+end
+```
+
+```elixir
+defmodule NavComponent do
+  use Phoenix.LiveComponent
+
+  @impl Phoenix.LiveComponent
+  def mount(socket) do
+    socket = Surface.init(socket)
+    # ...
+    {:ok, socket}
+  end
+
+  ...
+end
+```
+
 To get started quickly when using Bootstrap 4 CSS styles, you can use the Bootstrap CDN 
 and add the following line to your `root.html.leex` in the DOM head:
 
