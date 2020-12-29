@@ -28,6 +28,16 @@ defmodule SurfaceBootstrap4.ButtonTest do
     )
   end
 
+  test "creates a <button> with value set" do
+    expected = """
+    <button type="button" value="sample-value" class="btn">
+      Render value
+    </button>
+    """
+
+    assert_component(~S(<Button value="sample-value">Render value</Button>), expected)
+  end
+
   test_with_params "prop size", &assert_component/2 do
     [
       small: {

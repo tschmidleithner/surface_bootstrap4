@@ -24,6 +24,9 @@ defmodule SurfaceBootstrap4.Button do
   @doc "The size of button"
   prop size, :string, values: ~w(sm md lg)
 
+  @doc "The value of the button"
+  prop value, :string
+
   @doc "Set the button as disabled preventing the user from interacting with the control"
   prop disabled, :boolean
 
@@ -48,6 +51,7 @@ defmodule SurfaceBootstrap4.Button do
       type="button"
       :on-click={{@click}}
       disabled={{@disabled}}
+      value={{@value}}
       class={{
         :btn,
         @class,
