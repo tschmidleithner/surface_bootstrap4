@@ -50,7 +50,7 @@ defmodule SurfaceBootstrap4.NavTest do
     ]
   end
 
-  test_with_params "nav_link properties", &assert_component/2 do
+  test_with_params "nav_link props", &assert_component/2 do
     [
       active: {
         ~S(<NavLink to="/" active>Active link</NavLink>),

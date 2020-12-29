@@ -28,7 +28,7 @@ defmodule SurfaceBootstrap4.BadgeTest do
     )
   end
 
-  test_with_params "property color", &render_and_assert_badge/2 do
+  test_with_params "prop color", &render_and_assert_badge/2 do
     [
       primary: {
         ~S(<Badge color="primary">primary</Badge>),
@@ -69,7 +69,7 @@ defmodule SurfaceBootstrap4.BadgeTest do
     ]
   end
 
-  test_with_params "property pill", &assert_component/2 do
+  test_with_params "prop pill", &assert_component/2 do
     [
       pill: {
         ~S(<Badge pill>pill</Badge>),

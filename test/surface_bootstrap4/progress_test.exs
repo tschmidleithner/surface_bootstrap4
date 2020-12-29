@@ -41,7 +41,7 @@ defmodule SurfaceBootstrap4.ProgressTest do
     assert render_live(code) =~ expected
   end
 
-  test_with_params "property color", &assert_regex/2 do
+  test_with_params "prop color", &assert_regex/2 do
     [
       primary: {
         ~S(<Progress color="primary" />),
@@ -70,7 +70,7 @@ defmodule SurfaceBootstrap4.ProgressTest do
     ]
   end
 
-  test_with_params "properties", &assert_regex/2 do
+  test_with_params "props", &assert_regex/2 do
     [
       striped: {
         ~S(<Progress striped />),
