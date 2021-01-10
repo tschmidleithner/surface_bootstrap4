@@ -63,7 +63,7 @@ defmodule SurfaceBootstrap4.Table do
       </thead>
       <tbody>
         <tr
-          :for={{ {item, index} <- Enum.with_index(@data) }}
+          :for.with_index={{ {item, index} <- @data }}
           class={{ row_class_fun(@rowClass).(item, index) }}>
           <td :for.index={{ index <- @cols }}>
             <span><slot name="cols" index={{ index }} :props={{ item: item }}/></span>
