@@ -68,7 +68,7 @@ defmodule SurfaceBootstrap4.ButtonGroupTest do
           Large
         </button></div>
         """
-      },
+      }
     ]
   end
 
