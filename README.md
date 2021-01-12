@@ -26,7 +26,7 @@ More components will be added soon. Contributions are welcome!
   * [x] Badge
   * [ ] Breadcrumb
   * [x] Buttons (colors, sizes and states)
-  * [ ] Button group
+  * [x] Button group
   * [ ] Card
   * [ ] Carousel
   * [ ] Collapse
