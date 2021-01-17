@@ -14,7 +14,7 @@ defmodule SurfaceBootstrap4.ButtonGroup do
     <SurfaceBootstrap4.Button color="secondary">
       Right
     </SurfaceBootstrap4.Button>
-  </SurfaceBootstrap4.Nav>
+  </SurfaceBootstrap4.ButtonGroup>
   ```
   """
 
