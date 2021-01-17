@@ -24,7 +24,7 @@ More components will be added soon. Contributions are welcome!
 
   * [x] Alerts (colors, closeable)
   * [x] Badge
-  * [ ] Breadcrumb
+  * [x] Breadcrumb
   * [x] Buttons (colors, sizes and states)
   * [x] Button group
   * [ ] Card
