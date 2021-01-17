@@ -13,14 +13,17 @@ defmodule SurfaceBootstrap4.BreadcrumbTest do
     <nav><ol class="breadcrumb"><li class="breadcrumb-item"><a href="/">Home</a></li><li class="breadcrumb-item active"><a href="/">Library</a></li></ol></nav>
     """
 
-    assert_component(~S(<Breadcrumb>
+    assert_component(
+      ~S(<Breadcrumb>
       <BreadcrumbItem>
         <Link to="/">Home</Link>
       </BreadcrumbItem>
       <BreadcrumbItem active>
         <Link to="/">Library</Link>
       </BreadcrumbItem>
-    </Breadcrumb>), expected)
+    </Breadcrumb>),
+      expected
+    )
   end
 
   defp assert_component(component, expected) do
