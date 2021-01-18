@@ -34,7 +34,7 @@ More components will be added soon. Contributions are welcome!
   * [ ] Forms
   * [ ] Input group
   * [ ] Jumbotron
-  * [ ] List group
+  * [x] List group
   * [ ] Media object
   * [ ] Modal
   * [x] Navs (Nav, NavItem, NavLink)
